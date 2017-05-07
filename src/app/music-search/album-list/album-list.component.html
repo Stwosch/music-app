@@ -1,0 +1,4 @@
+<div class="card-deck card-deck-justify">
+    <album-card [album]="album" class="card" *ngFor="let album of albums" [routerLink]="['album', album.id]" ></album-card>
+    <p *ngIf="albums && albums.length === 0">Nie znaleziono żadnych albumów</p>
+</div>

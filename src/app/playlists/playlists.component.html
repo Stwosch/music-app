@@ -1,0 +1,21 @@
+<div class="row mt-1">
+  <div class="col-xs">
+      <h4 class="display-3 float-xs-right mb-2">Twoje Playlisty</h4>
+  </div>
+</div>
+
+<div class="row mt-1 ui-container">
+  <div class="col-xs">
+    <content-card title="Playlista">
+      <router-outlet></router-outlet>
+    </content-card>
+  </div>
+  <div class="col-xs">
+
+    <playlists-list></playlists-list>
+
+    <div class="form-group">
+      <button class="btn btn-success float-xs-right" [routerLink]="'new'">Nowa Playlista</button>
+    </div>
+  </div>
+</div>

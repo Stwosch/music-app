@@ -1,0 +1,10 @@
+<div *ngIf="playlist">
+    <h3 class="card-title">{{ playlist.name }}</h3>
+    <track-list [playlist]="playlist" [tracks]="playlist.tracks" [playlistControls]="{add: false, remove: true}"></track-list>
+    <div class="form-group">
+        <button class="btn btn-default float-xs-right" [routerLink]="['edit']">Edytuj</button>
+    </div>
+</div> 
+<div *ngIf="!playlist">
+    <p>Wybierz <b>playlistę</b>!</p>
+</div>

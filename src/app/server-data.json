@@ -1,0 +1,32 @@
+{
+  "playlists": [
+    {
+      "name": "dsadsa",
+      "tracks": [],
+      "color": "#0000FF",
+      "favourite": false,
+      "id": 1490732217530
+    },
+    {
+      "name": "bb1",
+      "tracks": [],
+      "color": "#0000FF",
+      "favourite": false,
+      "id": 1490732247779
+    },
+    {
+      "name": "cc3",
+      "tracks": [],
+      "color": "#0000FF",
+      "favourite": false,
+      "id": 1490732255232
+    },
+    {
+      "name": "444",
+      "tracks": [],
+      "color": "#0000FF",
+      "favourite": false,
+      "id": 1490732264331
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<audio #audio_id style="width: 100%" controls></audio>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th> # </th>
+        <th> Nazwa </th>
+        <th> Wykonawca </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let track of tracks; let i = index">
+        <td> {{i + 1}} </td>
+        <td> {{track.name}} </td>
+        <td> {{track.artist}} </td>
+        <td>
+            <button type="button" class="btn btn-primary" (click)="play($event, audio_id, track)">
+                <i #playContent class="fa fa-play" aria-hidden="true"></i>
+            </button>
+        </td> 
+        <td *ngIf="playlistControls.add">
+            <button type="button" class="btn btn-warning" [disabled]="!(selectedPlaylist | async)" (click)="addTrackToPlaylist(track)">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+        </td>
+        <td *ngIf="playlistControls.remove">
+            <button type="button" class="btn btn-danger" (click)="removeTrackFromPlaylist(track.id)">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+        </td>
+    </tr>
+    </tbody>
+</table>
